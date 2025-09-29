@@ -7,13 +7,13 @@
 
 ## Ответ
 
-[Код](https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad/tree/master/Avito%20API "Код") 
+[Код](https://github.com/zviad-dev/simbirsoft-sdet/blob/main/test_formpage.py "Код") 
 
 ## Инструкция по запуску кода
 
 1. Склонируйте к себе репозиторий, в котором хранится проект тестового задания, через выполнение команды в терминале
     ```
-    git clone https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad.git
+    git clone https://github.com/zviad-dev/simbirsoft-sdet.git
     ```
 
 2. Убедитесь, что на Вашем компьютере установлен Python. В командной строке/терминале выполните команду
