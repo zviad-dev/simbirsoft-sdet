@@ -1,0 +1,44 @@
+# Тестовое задание SDET в SimbirSoft
+
+## Задание 1
+
+Автоматизация. Работа с полями и формами
+
+## Ответ
+
+[Тест-кейсы](https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad/blob/master/TESTCASES.md "Тест-кейсы") 
+
+[Баг-репорт](https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad/blob/master/BUGS.md "Баг-репорт") 
+
+[Код](https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad/tree/master/Avito%20API "Код") 
+
+## Инструкция по запуску кода
+
+1. Склонируйте к себе репозиторий, в котором хранится проект тестового задания, через выполнение команды в терминале
+    ```
+    git clone https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad.git
+    ```
+
+2. Убедитесь, что на Вашем компьютере установлен Python. В командной строке/терминале выполните команду
+    ```
+    python -v
+    ```  
+    Если он не установлен, то установите с официального [сайта Python](https://www.python.org/downloads/), выбрав подходящую версию для Вашей операционной системы, и пройдите шаг сначала.  В процессе установки обязательно поставьте галочку в чекбоксе "Add python.exe to PATH". Иначе, у Вас не будет корректно отображаться версия Python
+
+3. Через командную строку/терминал перейдите в корневую директорию проекта, выполнив команду
+   ```
+   cd /здесь укажите путь до директории с проектом
+   ```
+
+4. Установите необходимые зависимости из файла `requirements.txt`, выполнив команду  
+   ```
+   pip install -r requirements.txt
+   ```
+   если она не выполняется, то попробуйте
+   ```
+   pip3 install -r requirements.txt
+   ```
+
+5. Наконец, запустите тесты, выполнив команду  
+   ```
+   pytest -v
