@@ -1,5 +1,4 @@
 from playwright.sync_api import expect
-import allure
 
 
 class FormPage:
@@ -15,7 +14,8 @@ class FormPage:
         self.page.locator('#name-input').fill("Zviad")
 
     def fill_element_input_password(self):
-        self.page.get_by_label('Password').fill("Password1!")
+        self.page.locator(
+            'xpath=//label[contains(text(), "Password")]//input[@type="password"]').fill("Password1!")
 
     def fill_element_input_drink(self):
         self.page.get_by_text("Milk").click()
@@ -31,14 +31,15 @@ class FormPage:
         self.page.get_by_test_id("email").fill("name@example.com")
 
     def fill_element_input_message(self):
-        text_auto = self.page.get_by_test_id(
-            "automation").text_content().split()
 
-        maxlen = max(text_auto, key=len)
-        countauto = len(text_auto)
-        res = maxlen + ' ' + str(countauto)
+        def data_for_message(data):
+            text_auto = self.page.get_by_test_id(
+                "automation").text_content().split()
+            return max(data, key=len) + ' ' + str(len(data))
 
-        self.page.get_by_test_id("message").fill(res)
+        text_auto = self.page.locator(
+            'label:has-text("Automation tools") + ul li').all_inner_texts()
+        self.page.get_by_test_id("message").fill(data_for_message(text_auto))
 
     def click_submit(self):
 
