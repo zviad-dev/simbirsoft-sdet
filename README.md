@@ -7,6 +7,8 @@
 
 ## Ответ
 
+![Иллюстрация к проекту](https://github.com/zviad-dev/simbirsoft-sdet/blob/main/allure.png)
+
 [Код](https://github.com/zviad-dev/simbirsoft-sdet/blob/main/test_formpage.py "Код") 
 
 ## Инструкция по запуску кода
