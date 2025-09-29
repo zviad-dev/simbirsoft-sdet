@@ -1,5 +1,6 @@
 # Тестовое задание SDET в SimbirSoft
 
+
 ## Часть 1
 
 Автоматизация.Работа с полями и формами
@@ -39,10 +40,14 @@
    ```
    pytest -v
 
-Дополнение. Для создания отчетов Allure  
+6. Генерация результатов тестирования
    ```
    pytest -v -s --alluredir results
-   allure serve results
+
+7. Визуализация результатов тестирования  
+   ```
+   allure serve results  
+
 
 ## Часть 2
 
@@ -50,4 +55,4 @@
 
 ## Ответ
 
-[Тест-кейсы](https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad/blob/master/TESTCASES.md "Тест-кейсы") 
+[Тест-кейсы](https://github.com/zviad-dev/simbirsoft-sdet/TESTCASES.md "Тест-кейсы") 
