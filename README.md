@@ -1,14 +1,10 @@
 # Тестовое задание SDET в SimbirSoft
 
-## Задание 1
+## Часть 1
 
-Автоматизация. Работа с полями и формами
+Автоматизация.Работа с полями и формами
 
 ## Ответ
-
-[Тест-кейсы](https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad/blob/master/TESTCASES.md "Тест-кейсы") 
-
-[Баг-репорт](https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad/blob/master/BUGS.md "Баг-репорт") 
 
 [Код](https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad/tree/master/Avito%20API "Код") 
 
@@ -42,3 +38,16 @@
 5. Наконец, запустите тесты, выполнив команду  
    ```
    pytest -v
+
+Дополнение. Для создания отчетов Allure  
+   ```
+   pytest -v -s --alluredir results
+   allure serve results
+
+## Часть 2
+
+Тестовая документация.Проверка формы
+
+## Ответ
+
+[Тест-кейсы](https://github.com/zviad-dev/QA-tech-internship-Toloraya-Zviad/blob/master/TESTCASES.md "Тест-кейсы") 
